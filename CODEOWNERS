@@ -1,0 +1,6 @@
+# sample CODEOWNERS file at the root of the master branch
+# Here's a global owner
+* @JimBlizzard
+
+# here's one for /poi files
+/poi @JimBlizzard
