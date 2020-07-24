@@ -21,8 +21,7 @@ WORKDIR /src/tests/UnitTests
 # RUN dotnet test --logger trx
 # output test result to mounted volume 
 RUN dotnet test -c Release --logger "trx;LogFileName=testresults.trx" 
-RUN dotnet publish -c Release -o out
+# RUN dotnet publish -c Release -o out
 RUN echo $PWD
 RUN ls
-RUN ls out
 RUN ls TestResults
