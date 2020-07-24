@@ -20,4 +20,4 @@ RUN ls
 WORKDIR /src/tests/UnitTests
 # RUN dotnet test --logger trx
 # output test result to mounted volume 
-RUN dotnet test --logger trx --results-directory /var/temp
+RUN dotnet test -c Release --logger "trx;LogFileName=testresults.trx" --results-directory /var/temp
