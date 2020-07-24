@@ -24,4 +24,5 @@ RUN dotnet test -c Release --logger "trx;LogFileName=testresults.trx" --results-
 # RUN dotnet publish -c Release -o out
 RUN echo $PWD
 RUN ls
-RUN ls TestResults
+# RUN ls TestResults
+RUN ls /var/temp
