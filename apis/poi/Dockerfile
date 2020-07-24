@@ -18,6 +18,6 @@ RUN dotnet restore
 RUN echo $PWD
 RUN ls
 WORKDIR /src/tests/UnitTests
-RUN dotnet test --logger trx
-#output test result to mounted volume 
-#RUN dotnet test --logger trx --results-directory /var/temp
+# RUN dotnet test --logger trx
+# output test result to mounted volume 
+RUN dotnet test --logger trx --results-directory /var/temp
